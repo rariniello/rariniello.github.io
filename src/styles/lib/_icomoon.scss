@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?38o932');
+  src:  url('../fonts/icomoon.eot?38o932#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?38o932') format('truetype'),
+    url('../fonts/icomoon.woff?38o932') format('woff'),
+    url('../fonts/icomoon.svg?38o932#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-kicad:before {
+  content: "\e900";
+}
+.icon-solidworks:before {
+  content: "\e901";
+}

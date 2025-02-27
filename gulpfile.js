@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var csso = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var plumber = require('gulp-plumber');
 var cp = require('child_process');
 var imagemin = require('gulp-imagemin');
@@ -15,7 +15,7 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
  * runs a child process in node that runs the jekyll commands
  */
 gulp.task('jekyll-build', function (done) {
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
+	return cp.spawn("bundle exec jekyll", ['build'], {stdio: 'inherit', shell: true})
 		.on('close', done);
 });
 
@@ -62,10 +62,15 @@ gulp.task('fonts', function() {
 /*
  * Minify images
  */
+// gulp.task('imagemin', function() {
+// 	return gulp.src('src/img/**/*.{jpg,png,gif}')
+// 		.pipe(plumber())
+// 		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+// 		.pipe(gulp.dest('assets/img/'))
+// });
+
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*.{jpg,png,gif}')
-		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
 		.pipe(gulp.dest('assets/img/'))
 });
 
@@ -86,6 +91,7 @@ gulp.task('watch', function() {
   gulp.watch('src/fonts/**/*.{tff,woff,woff2}', gulp.series(['fonts']));
   gulp.watch('src/img/**/*.{jpg,png,gif}', gulp.series(['imagemin']));
   gulp.watch(['*html', '_includes/*html', '_layouts/*.html'], gulp.series(['jekyll-rebuild']));
+  gulp.watch(['*md', 'projects/*md'], gulp.series(['jekyll-rebuild']));
 });
 
 gulp.task('default', gulp.series(['js', 'sass', 'fonts', 'browser-sync', 'watch']));

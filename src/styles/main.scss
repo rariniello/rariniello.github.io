@@ -1,6 +1,9 @@
 @import "lib/normalize";
 @import "lib/fontawesome";
+@import "lib/brands";
+@import "lib/solid";
 @import "lib/devicon";
+@import "lib/icomoon";
 
 @import 'base';
 @import 'vars';
@@ -9,3 +12,4 @@
 @import 'about';
 @import 'projects';
 @import 'footer';
+@import 'project';
