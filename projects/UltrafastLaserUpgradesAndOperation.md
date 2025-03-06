@@ -27,14 +27,14 @@ title:  "Ultrafast Laser Upgrades and Operation"
 
 ## FACET-II Laser System
 
-The FACET-II experimental area features an 800 nm Ti:Sapphire laser system producing 600 mJ pulses at the exit of the main amplifier. After amplification, the pulse is image-relayed to a series of diagnostics, a variable energy attenuator, a beam-expanding telescope, and a deformable mirror before being transported through a 30-meter-long vacuum transport line to the accelerator housing. In the accelerator housing, the laser is split into a probe arm and a main arm, each compressed separately to a 45 fs pulse duration. The main arm delivers 225 mJ to the target.
+The FACET-II experimental area features an 800 nm Ti:Sapphire laser system producing 600 mJ pulses at the exit of the main amplifier. After amplification, the pulse is image-relayed to a series of diagnostics, a variable energy attenuator, a beam-expanding telescope, and a deformable mirror before being transported through a 30-meter-long vacuum transport line to the accelerator housing. In the accelerator housing, the laser is split into a probe arm and a main arm, each compressed separately to 45 fs pulse duration. The main arm delivers 225 mJ to the target.
 
 {:style="text-align: center;"}
 ![S20 laser assembly](/assets/img/Sector20LaserAssembly.jpg){: width="650"}
 
 ## Adaptive Optics and Auto Alignment
 
-The laser system was originally built for FACET. For FACET-II, the transport line was rebuilt to reduce the number of windows in the transport line down to a single vacuum entrance window. As part of this redesign, all of the optics after the amplifiers were removed to make way for the new parts of the transport.
+The laser system was originally built for FACET. For FACET-II, the transport line was rebuilt to reduce the number of windows down to a single vacuum entrance window. As part of this redesign, all of the optics after the amplifiers were removed to make way for the new parts of the transport.
 
 I was responsible for designing, installing, and commissioning the new post-amplifier section, which included an attenuator, beam expander, deformable mirror, and alignment diagnostics. I completed this work in parallel with designing the interaction point region.
 

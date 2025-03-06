@@ -7,7 +7,7 @@ title:  "Experimental Control System"
 
 * __Challenge:__ Plasma wakefield experiments using laser-ionized plasmas require precise alignment, which must be completed within a single beamtime shift before accelerator drift sets in.
 * __Solution:__ I developed control panels, automated tools, and procedures to speed up laser alignment, and feedback systems to help maintain it.
-  * Designed task-based GUIs that centralize relevant controls, reducing the number of menus and clicks needed for adjustments.
+  * Designed task-based GUIs that centralized relevant controls, reducing the number of menus and clicks needed for adjustments.
   * Automated repetitive tasks like aligning a laser to a reference position on a camera or calibrating motors.
   * Developed alignment tools that automate complex multi-step procedures with minimal intervention.
   * Created real-time data analysis displays to provide immediate feedback on experimental results.
@@ -17,9 +17,9 @@ title:  "Experimental Control System"
 
 ## Laser Control Panels
 
-Controls for the laser system components were spread across a wide number of panels, with some controls placed several menus deep. Finding the menus required knowing things like the controller and rack a motor was connected to. The controls themselves were generic, providing a clunky interface that required significant user input. Take for example changing the laser energy. A user would have to look up that the motor for the waveplate was on controller LS24, click through the following list of menus *FACETHOME->LI20->Laser->Infrastructure->XPS moc-la20-ls24*, look up a plot of energy vs. angle in the laser wiki to figure out what angle to use, then enter the angle desired into the "Request" box. Performing such a long process 10s of times during laser alignment significantly increased the time required.
+Controls for the laser system components were spread across a wide number of panels, with some controls placed several menus deep. Finding the menus required knowing things like the controller and rack a motor was connected to. The controls themselves were generic, providing a clunky interface that required significant user input. Take for example changing the laser energy. A user would have to look up the controller for the attenuator's waveplate motor (controller LS24), click through the following list of menus *FACETHOME->LI20->Laser->Infrastructure->XPS moc-la20-ls24*, look up a plot of energy vs. angle in the laser wiki to figure out what angle to use, then enter the angle desired into the "Request" box. Performing such a long process 10s of times during laser alignment significantly increased the time required.
 
-I designed new laser control panels, organizing them into three logical sections, each with a dedicated interface containing all relevant controls. This allows alignment to proceed by working through the panels one after another. The final panel contains all the controls required for running the experiment in one place. Each control includes device-specific buttons based on what I felt was most useful for the user. Instead of a generic motor control, for example, the energy attenuator waveplate has buttons in terms of energy percentage.
+I designed new laser control panels, organizing them into three logical sections, each with a dedicated interface containing all relevant controls. This allows alignment to proceed by working through the panels one after another. The final panel contains all the controls required for running the experiment in one place. Each control includes device-specific buttons based on what I felt were the most useful for the user. Instead of a generic motor control, for example, the energy attenuator waveplate has buttons in terms of energy percentage.
 
 {:refdef:style="text-align: center;"}
 ![Laser room control panel](/assets/img/LaserRoomControlPanel.jpg){: width="960" style="border-radius: 5px"}
@@ -33,7 +33,7 @@ The best feature of the laser control panels is the "Auto" button on each alignm
 {:refdef:style="text-align: center;"}
 ![Chernekov spectrometer](/assets/img/CHERWaterfall.jpg){: width="960" style="border-radius: 5px"}
 
-Real-time access to experimental results is essential for rapid tuning and optimization. I wrote a spectrometer analysis tool that extracts the electron beam energy spectrum from the raw Cherenkov spectrometer images in real time, eliminating the need for post processing. The tool calculates several parameters from the spectrum that have been used as objective functions for machine-learning-based accelerator optimization. It also provides a live waterfall plot of the spectrum which is invaluable for hand tuning the accelerator.
+Real-time access to experimental results is essential for rapid tuning and optimization. I wrote a spectrometer analysis tool that extracts the electron beam energy spectrum from the raw Cherenkov spectrometer images in real time, eliminating the need for post processing. The tool calculates several parameters from the spectrum, which have been used as objective functions for machine-learning-based accelerator optimization. It also provides a live waterfall plot of the spectrum which is invaluable for hand tuning the accelerator.
 
 {:refdef:style="text-align: center;"}
 ![Lithium oven panel](/assets/img/LithiumOvenDisplay.jpg){: height="360" style="margin: 0 6px;border-radius: 5px"}
