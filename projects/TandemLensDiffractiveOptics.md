@@ -13,7 +13,7 @@ title:  "Tandem Lens Diffractive Optics"
   * Developed a custom lens design algorithm to calculate the phase profiles of both optics.
   * Wrote a physical optics simulation to model the laser ionization process and the predict the amount of plasma defocusing.
 * __Result:__ The tandem lens system was successfully deployed in an experimental campaign.
-  * Characterized the focal volume, with laser fluence measurements matching simulation predictions.
+  * Laser fluence measurements of the focal volume matching predictions from simulation.
   * Achieved a record-high energy transfer from the drive beam to the wakefield in a plasma wakefield accelerator, demonstrating the system’s effectiveness.
 
 {:style="text-align: center;"}

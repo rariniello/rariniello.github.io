@@ -19,7 +19,7 @@ title:  "FACET-II Interaction Point"
 
 ## FACET-II Facility
 
-The FACET-II (Facility for Advanced Experimental Tests) particle accelerator accelerates 2 nC electron beams up to 10 GeV using approximately 1 km of the radio-frequency cavities from the middle third of the original SLAC linac. The facility is unique in its ability to produce very-high-current electron beams, exceeding 100 kA, at 10 GeV. These beams enable a broad range of scientific studies, including plasma wakefield acceleration, strong-field quantum electrodynamics, strong-field physics, and advanced beam diagnostics.
+The FACET-II (Facility for Advanced Experimental Tests) particle accelerator accelerates 2 nC electron beams up to 10 GeV using approximately 1 km of radio-frequency cavities from the middle third of the original SLAC linac. The facility is unique in its ability to produce very-high-current electron beams, exceeding 100 kA, at 10 GeV. These beams enable a broad range of scientific studies, including plasma wakefield acceleration, strong-field quantum electrodynamics, strong-field physics, and advanced beam diagnostics.
 
 A broad experimental program requires different setups at the accelerator's interaction point (IP). However, access to the IP is limited to two days every two weeks due to radiation from the upstream accelerator. Further complicating setup changes, the IP is located 100 meters from the nearest staircase—spanning three stories—in a tunnel where temperatures regularly exceed 95°F. In this challenging environment, the experimental setup must be highly reliable, support multiple experiments simultaneously, allow for remote switching between configurations, and remain adaptable to future experimental needs.
 
